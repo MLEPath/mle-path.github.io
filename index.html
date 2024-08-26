@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLE Path - Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #1565c0;
+            --background-color: #f0f0f0;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 90%;
+            width: 400px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        p {
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            text-align: left;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+        .link:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
+        }
+        .link svg {
+            position: absolute;
+            left: 1rem;
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .link span {
+            flex-grow: 1;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 2rem;
+                width: 100%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MLE Path</h1>
+        <p>I help ML practitioners through all the phases of their career path: land their dream job, level up their skills, and leverage their knowledge to excel in AI's dynamic landscape.</p>
+        <div class="links">
+            <a href="https://mlepath.substack.com" class="link">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                <span>Newsletter</span>
+            </a>
+            <a href="https://youtube.com/@MLEPath" class="link">
+                <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                <span>YouTube</span>
+            </a>
+            <a href="https://mlepath.substack.com" class="link">
+                <svg viewBox="0 0 24 24"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12.01c1.1 0 1.99-.9 1.99-2l-.01-16zM9 19H7v-2h2v2zm8 0h-6v-2h6v2zm-6-4h-2v-2h2v2zm-2-4V9h2v2h-2zm6 4h-2v-2h2v2zm-2-4V9h2v2h-2z"/></svg>
+                <span>Substack</span>
+            </a>
+            <a href="https://twitter.com/MLEPath" class="link">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <span>X</span>
+            </a>
+            <a href="https://buzzsprout.com/YOURID" class="link">
+                <svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 0 0-11 11v6a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H6V9a6 6 0 1 1 12 0v2h-1a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3v-6a11 11 0 0 0-11-11zM6 10h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1zm12 0h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1z"/></svg>
+                <span>Podcast</span>
+            </a>
+            <a href="https://mlepath.com/classes" class="link">
+                <svg viewBox="0 0 24 24"><path d="M12 2L1 8l11 6 9-4.91V17h2V8L12 2zm5.17 14.51l-2.98 1.1-3.43-1.82-2.54 1.35-2.76-1.46v1.81L12 20l6.55-3.49v-2.21l-1.38.73z"/></svg>
+                <span>Classes</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
