@@ -46,10 +46,6 @@ h1 {
     padding: 40px 0;
 }
 
-.link, .link-row {
-    grid-column: span 1;
-}
-
 .link {
     background-color: white;
     border-radius: 8px;
@@ -76,6 +72,16 @@ h1 {
     margin-bottom: 10px;
 }
 
+.link-row {
+    grid-column: span 3;
+    display: flex;
+    gap: 20px;
+}
+
+.link-row .link {
+    flex: 1;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 10px;
@@ -92,6 +98,9 @@ h1 {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .link-row {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 480px) {
@@ -99,8 +108,7 @@ h1 {
         grid-template-columns: 1fr;
     }
     .link-row {
-        display: flex;
+        grid-column: span 1;
         flex-direction: column;
-        gap: 20px;
     }
 }
